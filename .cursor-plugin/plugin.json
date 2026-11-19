@@ -1,7 +1,7 @@
 {
   "name": "unforgetter",
+  "version": "1.0.18",
   "description": "Recall current personal memory across AI tools and propose traceable updates with consent.",
-  "version": "1.0.17",
   "author": {
     "name": "Tiny Agency ApS"
   },
@@ -16,5 +16,7 @@
     "knowledge",
     "unforgetter"
   ],
-  "logo": "assets/icon.svg"
+  "logo": "assets/icon.svg",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
 }
