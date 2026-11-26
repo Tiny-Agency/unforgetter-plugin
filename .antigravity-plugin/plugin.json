@@ -1,0 +1,26 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "unforgetter",
+  "displayName": "Unforgetter",
+  "version": "1.0.18",
+  "description": "Recall current personal memory across AI tools and propose traceable updates with consent.",
+  "author": {
+    "name": "Tiny Agency ApS",
+    "url": "https://unforgetter.com"
+  },
+  "homepage": "https://unforgetter.com",
+  "logo": "assets/icon.svg",
+  "keywords": [
+    "memory",
+    "context",
+    "mcp",
+    "decisions",
+    "knowledge",
+    "unforgetter"
+  ],
+  "suggestedPrompts": [
+    "Draft a two-line update for beta testers. We decided today that the beta stays invite-only.",
+    "Has my latest update been saved to memory yet, or is it still waiting?",
+    "What have we decided about the beta? Show me where that comes from."
+  ]
+}

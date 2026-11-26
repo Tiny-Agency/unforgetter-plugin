@@ -1,16 +1,25 @@
 # Unforgetter plugin
 
-Unforgetter gives your AI assistant access to your saved project memory: current decisions, preferences, open questions and project context, with the source each one comes from. This repository is the Unforgetter plugin for Grok Bot, Cursor and Claude.
+Unforgetter gives your AI assistant access to your saved project memory: current decisions, preferences, open questions and project context, with the source each one comes from. This repository is the Unforgetter plugin for Grok Bot, Cursor, Claude and Google Antigravity.
 
 ## What this plugin contains
 
 - One skill (`unforgetter-memory`): written guidance that tells the assistant when to load project context, how to show sources, and when to save a decision, rule, preference or correction that you stated.
 - `mcp.json`: one remote MCP server, `unforgetter`, at https://app.unforgetter.com/mcp. You sign in with OAuth in your browser; the file holds no tokens, keys or headers.
-- An icon, plus the manifests `.cursor-plugin/plugin.json` (Grok Bot and Cursor) and `.claude-plugin/plugin.json` (Claude).
+- An icon, plus the manifests `.cursor-plugin/plugin.json` (Grok Bot and Cursor), `.claude-plugin/plugin.json` (Claude) and `.antigravity-plugin/plugin.json` (Google Antigravity).
+- `mcp_config.json` and `rules/AGENTS.md`: used by Antigravity. The MCP server URL is the same; Antigravity signs in with OAuth. The rule is a short reminder to load project context and to save what you state in the same turn.
 
 It has no hooks and no scripts. It runs no code on your machine.
 
 In Claude the Unforgetter tools come from the Unforgetter connector: add it once in claude.ai Settings > Connectors with the URL above. Add Unforgetter only once in any app. If its tools are missing, the skill tells the assistant to say so and not to claim that anything was saved.
+
+Antigravity reads `.antigravity-plugin/plugin.json`, `mcp_config.json` and `rules/`. Until the plugin is in the Antigravity Marketplace, install it from this repository:
+
+```sh
+agy plugin install https://github.com/Tiny-Agency/unforgetter-plugin
+```
+
+Then sign in with your Unforgetter account when Antigravity asks. Setup: https://unforgetter.com/connect#app-antigravity
 
 ## Saved updates
 
